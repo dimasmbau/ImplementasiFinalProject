@@ -1,0 +1,37 @@
+.menu{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul li{
+    display: inline-block;
+}
+.logo{
+    float: left;
+    margin-top: 23px;  
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+}
+.menu{
+    max-width: 1300px;
+    margin: auto;
+}
+div.Sejarah_Bimbelku_id{
+    position: absolute;
+    margin-top: 100px;
+    left: 45%;
+}
+div.Lorem_ipsum_dolor_sit_amet__co{
+    position: absolute;
+    margin-top: 120px;
+    max-width: 600px;
+    left: 27%;
+    text-align: center
+}
