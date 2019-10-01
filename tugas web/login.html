@@ -1,0 +1,89 @@
+<html>
+<style>
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    p.login {
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    p.masuk {
+        position: absolute;
+        margin-top: -40px;
+    }
+
+    input[type=email],
+    [type=password] {
+        border: 1px solid grey;
+        border-radius: 4px;
+        padding: 15px 30px;
+        margin: 10px 0px;
+    }
+
+    input[type=button] {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 13px 100px;
+        border: none;
+        border-radius: 2px;
+        background-color: blueviolet;
+        color: white;
+    }
+
+    .center {
+        margin-left: 40%;
+        margin-top: 7%;
+    }
+
+    .login {
+        padding-left: 8%;
+        color: gray;
+    }
+    .masuk{
+        padding-left: 45px;
+        color: gray;
+    }
+    .ingat{
+        color:gray; 
+    }
+    p.belum{
+        color: gray;
+        font-size: 12px;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="center">
+        <p class="login">Login</p>
+        <p class="masuk">Masuk ke akun anda</p>
+        <form action="">
+            <input type="email" placeholder="Email/Username">
+            <br>
+            <input type="password" placeholder="Password...">
+            <br>
+            <input type="radio">
+
+            <label class="ingat" for="ingat">Remember me</label>
+            <a href="">Lupa Password?</a>
+        </form>
+        <br>
+        <input type="button" value="Login">
+        <p class="belum">Belum punya akun? <strong>Daftar sekarang</strong></p>
+    </div>
+
+</body>
+
+</html>
