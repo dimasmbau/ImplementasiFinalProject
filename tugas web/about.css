@@ -1,23 +1,32 @@
+body{
+    /* position: absolute; */
+    background-image: linear-gradient(135deg, #667eea 0%, rgb(138, 43, 226) 100%);
+    color: white;
+    /* background-color: #667eea; */
+}
 .menu{
     margin: 0px;
     padding: 0px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 900;
+
 }
 
 ul{
     float: right;
     list-style-type: none;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 ul li{
     display: inline-block;
+    padding : 20px;
 }
 .logo{
     float: left;
-    margin-top: 23px;  
+    font-size: 18px;
+    margin-top: 30px;  
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 900;
+    font-weight: 990;
 }
 .menu{
     max-width: 1300px;
@@ -25,13 +34,33 @@ ul li{
 }
 div.Sejarah_Bimbelku_id{
     position: absolute;
-    margin-top: 100px;
-    left: 45%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    letter-spacing: 5px;
+    margin-top: 170px;
+    left: 26%;
 }
 div.Lorem_ipsum_dolor_sit_amet__co{
     position: absolute;
-    margin-top: 120px;
-    max-width: 600px;
-    left: 27%;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 260px;
+    max-width: 725px;
+    left: 23%;
     text-align: center
+}
+div.konten2{
+    /* width: 400px; */
+    background-color:aqua;
+}
+div.lulusanterbaik{
+    position: absolute;
+    margin-top: 500px;
+    left: 50%; 
+    margin-left: -75px; 
+}
+div.tablekonten{
+    position : absolute;
+    margin-top: 550px;
+    left: 20%; 
 }
