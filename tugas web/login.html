@@ -2,9 +2,11 @@
 <style>
     body {
         font-family: 'Source Sans Pro', sans-serif;
+        background-image: linear-gradient(135deg, #667eea 0%, rgb(138, 43, 226) 100%);
     }
 
     p.login {
+        margin-left: 35px;
         font-size: 40px;
         font-weight: 900;
     }
@@ -29,27 +31,40 @@
         padding: 13px 100px;
         border: none;
         border-radius: 2px;
-        background-color: blueviolet;
+        background-image: linear-gradient(135deg, #667eea 0%, rgb(138, 43, 226) 100%);
         color: white;
+        margin-top:-15px; 
     }
-
+    .isi{
+        margin-top: -13px;
+    }
     .center {
-        margin-left: 40%;
+        margin-left: 35%;
         margin-top: 7%;
+        background-color: white;
+        padding-top: 0.5pt;
+        padding-left: 70px;
+        width: 300px;
+        height: 410px;
+        border-radius: 7px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 10px 26px 0 rgba(0, 0, 0, 0.19);
     }
 
     .login {
         padding-left: 8%;
         color: gray;
     }
-    .masuk{
+
+    .masuk {
         padding-left: 45px;
         color: gray;
     }
-    .ingat{
-        color:gray; 
+
+    .ingat {
+        color: gray;
     }
-    p.belum{
+
+    p.belum {
         color: gray;
         font-size: 12px;
     }
@@ -67,21 +82,23 @@
 <body>
 
     <div class="center">
-        <p class="login">Login</p>
-        <p class="masuk">Masuk ke akun anda</p>
-        <form action="">
-            <input type="email" placeholder="Email/Username">
-            <br>
-            <input type="password" placeholder="Password...">
-            <br>
-            <input type="radio">
+        <div class="isi">
+            <p class="login">Login</p>
+            <p class="masuk">Masuk ke akun anda</p>
+            <form action="">
+                <input type="email" placeholder="Email/Username">
+                <br>
+                <input type="password" placeholder="Password...">
+                <br>
+                <input type="radio">
 
-            <label class="ingat" for="ingat">Remember me</label>
-            <a href="">Lupa Password?</a>
-        </form>
-        <br>
-        <input type="button" value="Login">
-        <p class="belum">Belum punya akun? <strong>Daftar sekarang</strong></p>
+                <label class="ingat" for="ingat">Remember me</label>
+                <a href="">Lupa Password?</a>
+            </form>
+            <br>
+            <input type="button" value="Login">
+            <p class="belum">Belum punya akun? <strong>Daftar sekarang</strong></p>
+        </div>
     </div>
 
 </body>
