@@ -57,6 +57,7 @@ table {
 
 .header{
 	position: relative;
+	z-index: 5;
 	background-image: linear-gradient(135deg, #667eea 18%, rgb(138, 43, 226) 100%);
 	color : white;
 	height: 630px;

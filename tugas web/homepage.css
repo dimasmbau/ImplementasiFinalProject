@@ -1,0 +1,527 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* body{
+   
+    background-image: linear-gradient(135deg, #667eea 0%, rgb(138, 43, 226) 100%);
+    color: white;
+   
+}
+.menu{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+
+} */
+
+.header{
+	position: relative;
+	background-image: linear-gradient(135deg, #667eea 18%, rgb(138, 43, 226) 100%);
+	color : white;
+	height: 700px;
+}
+
+.menu{
+	font-family: 'Source Sans Pro', sans-serif;
+    /* font-size: 18px; */
+	font-weight: bold;
+}
+.menu{
+	margin-top: 20px;
+}
+
+ul a{
+	font-size: 16px;
+	font-weight: 900;
+	color: white;
+	float: right;
+	padding: 30px;
+	margin-top: -4px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+ul{
+	margin-right: 60px;
+}
+
+.logo{
+	position: absolute;
+	font-size: 26px;
+	margin-left: 60px;
+	margin-top: 19px;
+}
+.namajudul{
+    text-align: left;
+    margin-left: 100px;
+	letter-spacing: 6px;
+	font-weight: 900;
+	font-size: 50px;
+	margin-top: 180px;
+}
+
+.menu .login{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+    background-color: #ff66b3;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    padding: 13px 60px;
+    margin-right: 2px;
+    margin-left: 105px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menu .daftar{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+    background-color: unset;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    padding: 13px 50px;
+    /* margin-left: 105px; */
+}
+
+.menu .gambare{
+    position: relative;
+    z-index: 5;
+    right: -650px; 
+    top: -502px;
+}
+
+.sejarah{
+    width: 450px;
+    margin-left: 74px;
+	font-size: 18px;
+    text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.8;
+	font-weight: 400;
+	padding: 30px;
+}
+
+.lulusanjudul{
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 50px;
+	margin-top: 120px;
+	margin-bottom: 50px;
+	color: #8645db;
+}
+
+.isi .kotakpanjang{
+    margin:auto;
+    margin-top: -30px;
+    height: 7px;
+    width: 130px;
+    background-color: #f88ac1; 
+}
+.view{
+    /* border: 2px solid black; */
+    margin: auto;
+    text-align: center; 
+    width: 550px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 1.8;
+	font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 3px;
+	font-weight: bold;
+    font-size: 18px;
+    color: #373438;
+}
+.tombolview{
+
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+    /* border: 2px solid black; */
+    /* padding: 15px 20px; */
+    width: 200px;
+}
+.tombolview .viewmore{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding : 10px 30px;
+    background-color: unset;
+    color: #8645db;
+    border: 2px solid #8645db;
+    border-radius: 5px; 
+}
+
+.kelebihankami{
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 50px;
+	margin-top: 120px;
+	margin-bottom: 50px;
+	color: #8645db;
+}
+
+
+.gambar_kelebihan1 .persegi1{
+    position: absolute;
+    z-index: 2;
+    margin-left: 280px;
+    margin-top: 50px;
+    height: 330px;
+    width: 250px;
+    background-color: #69b17a; 
+}
+
+.gambar_kelebihan1 .gambare2{
+    position: relative;
+    margin-left: 315px;
+    z-index: 5;
+}
+
+.gambar_kelebihan1 .judulkelebihan1{
+    font-family: 'Source Sans Pro', sans-serif;
+    /* letter-spacing: 3px; */
+	font-weight: bold;
+    font-size: 30px;
+    color: #69b17a; 
+    margin-top: -250px;
+    margin-left: 700px;
+}
+
+.garismetode{
+    position: relative;
+    width: 80px;
+    height: 1px;
+    background-color: #69b17a;
+    margin-top: 14px;
+    margin-bottom:-20px;
+    margin-left: 701px;
+}
+
+.gambar_kelebihan1 .isikelebihan1{
+    margin-left: 700px;
+    width: 400px;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* letter-spacing: 3px; */
+	font-weight: 400;
+    font-size: 19px;
+    line-height: 1.4;
+    color: #453965; 
+}
+
+.gambar_kelebihan2 .persegi2{
+    position: relative;
+    float: right;
+    z-index: 2;
+    right: 260px;
+    top: 250px;
+    height: 330px;
+    width: 250px;
+    background-color: #a17bb4; 
+}
+
+.gambar_kelebihan2 .gambare3{
+    float: right;
+    position: relative;
+    right: 50px;
+    top: 210px;
+    z-index: 5;
+}
+
+.gambar_kelebihan2 .judulkelebihan2{
+    position: relative;
+    float: right;
+    right: 150px;
+    top: 300px;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* letter-spacing: 3px; */
+	font-weight: bold;
+    font-size: 30px;
+    color: #a17bb4;
+}
+
+.garislulusan{
+    position: relative;
+    width: 80px;
+    height: 1px;
+    background-color: #69b17a;
+    top: 348px;
+    margin-bottom:-20px;
+    left: 597px;
+    background-color: #a17bb4;
+}
+
+.gambar_kelebihan2 .isikelebihan2{
+    position: relative;
+    text-align: right;
+    left: 280px;
+    top: 350px;
+    width: 400px;
+    font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+    font-size: 19px;
+    line-height: 1.4;
+    color: #453965; 
+}
+
+.gambar_kelebihan3 .persegi3{
+    position: absolute;
+    z-index: 1;
+    top: 2370px;
+    left: 280px;
+    height: 330px;
+    width: 250px;
+    background-color: #ff94ac; 
+}
+
+.gambar_kelebihan3 .gambare4{
+    position: relative;
+    left: 314px;
+    top: 550px;
+    z-index: 5;
+}
+
+.gambar_kelebihan3 .judulkelebihan3{
+    font-family: 'Source Sans Pro', sans-serif;
+    /* letter-spacing: 3px; */
+	font-weight: bold;
+    font-size: 30px;
+    color: #ff94ac; 
+    margin-top: 303px;
+    margin-left: 700px;
+}
+
+.garismetode2{
+    position: relative;
+    width: 80px;
+    height: 1px;
+    background-color: #ff94ac;
+    margin-top: 14px;
+    margin-bottom:-20px;
+    margin-left: 701px;
+}
+
+.gambar_kelebihan3 .isikelebihan3{
+    margin-left: 700px;
+    width: 400px;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* letter-spacing: 3px; */
+	font-weight: 400;
+    font-size: 19px;
+    line-height: 1.4;
+    color: #453965; 
+}
+
+.gambar{
+	margin: auto;
+    margin-top: 300px;
+    width: 1002px;
+	/* border: 2px solid black; */
+}
+
+.gambar .judul_mereka{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* letter-spacing: 3px; */
+	font-weight: bold;
+    font-size: 50px;
+    color: #7743a3;
+    margin-bottom: 80px;
+}
+.katamereka .isi_kata{
+    padding: 16px;
+    margin-bottom: 10px;
+}
+
+.katamereka2 .isi_kata{
+    padding: 16px;
+    margin-bottom: 10px;
+}
+
+.gambar .katamereka{
+    display: inline-block;
+    padding: 50px 10px 50px;
+	margin-right: 20px;
+	margin-top: 50px;
+	width: 290px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;	
+  }
+
+.gambar .katamereka2{
+    display: inline-block;
+    padding: 50px 22px 50px;
+	/* margin-right: 20px; */
+    margin-top: 50px;
+	width: 290px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;	
+  }
+.katamereka .gambarbulet{
+    margin-bottom: 15px; 
+}
+.katamereka2 .gambarbulet{
+    margin-bottom: 15px; 
+}
+  /* div.polaroid2 {
+	display: inline-block;
+	margin-top: 50px;
+	width: 250px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	
+  } */
+
+
+  div.container {
+	padding: 10px;
+  }
+  .container .thumbnail{
+      font-weight: bold;
+      line-height: 1.6;
+  } 
+
+.footer{
+    margin-top: -100px;
+	background-image: linear-gradient(135deg, #667eea 18%, rgb(138, 43, 226) 100%);
+	height: 380px;
+}
+.bergabung{
+	color: white;
+	padding-top: 50px;
+	margin-top: 265px;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 3px;
+	font-weight: 900;
+	font-size: 35px;
+}
+.email{
+	margin-top: 35px;
+	padding: 15px 100px;
+	border-radius: 3px;
+	border: none;
+}
+.tombol{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 18px;
+	padding: 8px 40px;
+	padding-top: 9px;
+	padding-bottom: 14px;
+	border-radius: 3px;
+	border: none;
+	color: white;
+	background-color: #ff66b3;
+}
+.bergabung .bawah{
+	margin-top: 170px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/* .bergabung .email{
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+	 content: " "; /* 1 */
+	 display: table; /* 2 */
+ }
+ 
+ .cf:after {
+	 clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+	 *zoom: 1;
+ }
