@@ -1,0 +1,72 @@
+<html lang="en">
+<script>
+    function validasi() {
+        var x = document.forms["form-registrasi"]["nama-depan"].value;
+        var y = document.forms["form-registrasi"]["password"].value;
+        var z = document.forms["form-registrasi"]["email"].value;
+        var p = document.forms["form-registrasi"]["password2"].value;
+        if (x == "" && y == "" && z == "") {
+            alert("Data Kosong");
+        } else if (x == "") {
+            alert("Username tidak Boleh Kosong");
+        } else if (y == "") {
+            alert("Password tidak Boleh Kosong");
+        } else if( z == ""){
+            alert("email tidak Boleh Kosong");
+        } else if( z == p){
+            // alert("password harus sama")
+            return true;
+        } else if( y != p){
+            alert("password harus sama")
+            // return true;
+        } 
+        else {
+            alert("Registrasi Berhasil. Silahkan Login!")
+            return true;
+        }
+        return false;
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="registrasi.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p class="register">Register.</p>
+
+    <div class="konten">
+        <div class="isi">
+            <center>
+                <form class="form" name="form-registrasi" action="../index.html" onsubmit="return validasi()" method="post">
+                    <p class="isi-form">"Isi form dengan baik dengan benar"</p>
+                    <input name="nama-depan" type="text" placeholder="Nama Lengkap...">
+                    <br>
+                    <input name="email" type="email" placeholder="Email...">
+                    <br>
+                    <input name="password" type="password" placeholder="Password...">
+                    <br>
+                    <input name="password2" type="password" placeholder="Ulangi Password...">
+                    <br>
+                    <!-- <input type="radio"> -->
+                    <!-- 
+                    <label class="ingat" for="ingat">Remember me</label>
+                    <a href="">Lupa Password?</a> -->
+                    <br><br>
+                    <input type="submit" value="Register">
+                </form>
+            </center>
+        </div>
+
+
+
+</body>
+
+</html>
