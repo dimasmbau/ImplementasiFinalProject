@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="tambah_data.css">
+  <title>Tambah Data</title>
+</head>
+
+<body>
+  <header>
+    <div class="header" id="logo">
+      <p class="judul-header">Bimbelku.id</p>
+    </div>
+  </header>
+
+  <div id="mySidebar" class="sidebar">
+    <hr>
+    <p class="admin">Dashboard</p>
+    <hr>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">Artikel</a>
+  </div>
+
+  <div class="mainn" id="main">
+    <button class="openbtn" onclick="openNav()" style="border-radius: 6px;">☰</button>
+    <!-- <h2>Collapsed Sidebar</h2>
+        <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p> -->
+  </div>
+  <div class="kotak-table" id="kotak-table1">
+    <form class="tambah-data" action="">
+      <table id="customers">
+        <tr>
+          <td>ID</td>
+          <td><input type="text" placeholder="id..."></td>
+        </tr>
+        <tr>
+          <td>Judul Artikel</td>
+          <td><input type="text" placeholder="Judul Artikel..."></td>
+        </tr>
+        <tr>
+          <td>Jenis Artikel</td>
+          <td><input type="text" placeholder="Jenis Artikel..."></td>
+        </tr>
+        <tr>
+            <td>Penulis</td>
+            <td><input type="text" placeholder="Penulis..."></td>
+          </tr>
+      </table>
+      <button class="tambah">Tambah Data</button>
+    </form>
+  </div>
+
+
+</body>
+
+<!-- script -->
+<script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "170px";
+    document.getElementById("main").style.marginLeft = "170px";
+    document.getElementById("logo").style.marginLeft = "125px";
+    document.getElementById("kotak-table1").style.marginLeft = "290px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "60px";
+    document.getElementById("logo").style.marginLeft = "0";
+    document.getElementById("kotak-table1").style.marginLeft = "280";
+  }
+</script>
+
+</html>
