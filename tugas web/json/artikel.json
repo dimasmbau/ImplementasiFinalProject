@@ -1,7 +1,20 @@
 [
+
+    {
+"judul" : "Matematika Sederhana",
+"jenis" : "Pendidikan SMA",
+"penulis" : "Dhimas Maulana"
+},
+
 {
-"judul" : "JANCOK",
+"judul" : "Belajar Koding",
 "jenis" : "Pendidikan",
-"penulis" : "Dhimas"
+"penulis" : "Brian Rizqi"
+},
+
+{
+"judul" : "How to Make Design",
+"jenis" : "Graphic",
+"penulis" : "Regi Pang"
 }
 ]
