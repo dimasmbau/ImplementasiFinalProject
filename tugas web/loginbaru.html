@@ -1,0 +1,112 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="loginbaru.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="kotaklogin cf">
+        <form class="formlogin" action="">
+            <table>
+                <tr>
+                    <td colspan="2"><label>Nama</label></td>
+
+                </tr>
+                <tr>
+                    <td colspan="2"><input name="nama-depan" type="text" placeholder="Jhon Pantau"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label>E-mail</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <input name="E-mail" type="email" placeholder="error@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="">Jenis Kelamin</label></td>
+                </tr>
+                <tr>
+                    <td class="radio"><input class="container" type="radio" name="gender" value="male"><span
+                            class="gender"> &nbsp Laki-laki </span>&nbsp &nbsp</td>
+                    <td class="radio"><input class="container" type="radio" name="gender" value="male"><span
+                            class="gender"> &nbsp Perempuan</span></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="">No Hp</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input name="" type="number" placeholder="088xxxxxxxxx"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="">Tingkat Pendidikan</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input name="nama-depan" type="text" placeholder="SMA"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input id="button" type="button" value="Daftar"></td>
+                    <!-- modaal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Peringatan!</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p>Apakah data yang anda isi sudah benar ?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <input id="btntdk" type="button" value="Tidak">
+                                <input id="btnya" type="button" value="Ya">
+                            </div>
+                        </div>
+
+                    </div>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+<script>
+    // modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("button");
+    var btnya = document.getElementById("btnya");
+    var btntdk = document.getElementById("btntdk");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    btnya.onclick = function() {
+        location.replace("../index.html");
+    }
+    btntdk.onclick = function() {
+        modal.style.display = "none";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+
+</html>

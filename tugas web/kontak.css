@@ -1,0 +1,173 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* .bg{
+    position: absolute;
+    z-index:0;
+} */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("maskgroup.png");
+    height: 1000px; 
+    /* background-position: center; */
+    background-repeat: no-repeat; 
+    background-size: 100%; 
+   }
+
+.header{
+    position: relative;
+    /* z-index: 9; */
+	/* background-image: linear-gradient(135deg, #667eea 18%, rgb(138, 43, 226) 100%); */
+	color : white;
+	/* height: 700px; */
+}
+
+.menu{
+	font-family: 'Source Sans Pro', sans-serif;
+    /* font-size: 18px; */
+	font-weight: bold;
+}
+.menu{
+	margin-top: 0px;
+}
+
+ul a{
+	font-size: 16px;
+	font-weight: 900;
+	color: white;
+	float: right;
+	padding: 30px;
+	margin-top: -4px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+ul{
+	margin-right: 60px;
+}
+
+.logo{
+	position: absolute;
+	font-size: 26px;
+	margin-left: 60px;
+	margin-top: 19px;
+}
+.namajudul{
+	letter-spacing: 6px;
+	font-weight: 900;
+	font-size: 50px;
+	margin-top: 100px;
+}
+
+.sejarah{
+    width: 450px;
+    /* margin-left: 74px; */
+	font-size: 18px;
+    /* text-align: left; */
+	letter-spacing: 1px;
+	line-height: 1.8;
+	font-weight: 400;
+	padding: 30px;
+}
+
+.kotakhubungi{
+    background-color: white;
+    border-radius : 8px;
+    width: 600px;
+    height: 480px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.formhubungi{
+    padding : 35px;
+}
+
+input[type=text],
+[type=email],[type=text] {
+    text-align: center;
+    border: none;
+    background-color: #F6F6F6;
+    border-radius: 4px;
+    padding: 15px 170px;
+    margin: 10px 0px;
+}
+
+input[type=button]{
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 14px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(91,47,201,1) 0%, rgba(158,92,226,1) 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color : white;
+    border:none;
+    padding: 9px 35px ;
+}
+::placeholder {
+    /* position : absolute; */
+    font-family: 'Poppins', sans-serif;
+    color : #5B2FC9;
+    /* margin-top: -200px; */
+}
+
+label{
+    font-weight: bold;
+    font-size: 13px;
+    color: #5B2FC9;
+    margin-left: 12px;
+    float : left;
+}
+
+.bawah{
+	position: relative;
+	bottom : -120px;
+	color: white;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 3px;
+	font-weight: 900;
+	font-size: 20px;
+}
