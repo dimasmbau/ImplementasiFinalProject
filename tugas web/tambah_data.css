@@ -151,7 +151,7 @@ body {
   margin-left: 280px;
   margin-top: 20px;
   margin-bottom: 40px;
-  height: 320px;
+  height: 500px;
   width: 900px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
@@ -164,10 +164,10 @@ body {
 .kotak-table .tambah{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
-  position: relative;
+  position: absolute;
   /* top: -10%; */
-  left: 70%;
-  margin-top: 15px;
+  left: 68%;
+  margin-top: -20px;
   background-color: #6b72e8;
   padding: 10px 15px 10px 15px;
   border: none;

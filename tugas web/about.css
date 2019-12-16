@@ -150,8 +150,8 @@ div.polaroid1 {
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: 1px;
-	
   }
+
 
   div.container {
 	padding: 10px;
@@ -200,11 +200,89 @@ div.polaroid1 {
 	font-size: 18px;
 }
 
+.kotak-tempat-bulet{
+	overflow: hidden;
+	position: absolute;
+	top: 590px;
+	right: 0px;
+	/* border:2px solid black; */
+	height: 380px;
+	width: 230px;
+}
+
+.lingkaran{
+	max-width: 1366px;
+	margin-left: 40px;
+	height: 140px;
+	width: 140px;
+	background-color: unset;
+	border: 110px solid #efedf6;
+	border-radius: 50%;
+}
 /* .bergabung .email{
 
 } */
 
+@media screen and (max-width: 1000px) {
+	.lingkaran {
+        display: none;
+    }
+}
 
+@media screen and (max-width: 700px) {
+	div.polaroid1{
+			display : block;
+			margin: auto;
+			margin-left: 21%;
+		}
+	div.polaroid2{
+			display : block;
+			margin: auto;
+			margin-left: 21%;
+		}
+}
+
+
+
+@media screen and (max-width: 660px) {
+    /* .menu{
+        border:2px solid black;
+    } */
+    .logo {
+        width: 100%;
+        margin-left: 41%;
+    }
+    .navbar {
+        margin-left: 27%;
+        position: absolute;     
+        margin-top: 80px;
+    }
+    ul a {
+        /* width: 0%; */
+        margin-left: 0;
+        padding: 10px;
+	}
+	.namajudul {
+        text-align: center;
+        margin-left: 100px;
+        letter-spacing: 2px;
+        font-weight: 900;
+        font-size: 40px;
+        margin-top: 180px;
+        margin-left: 2%;
+    }
+    .sejarah {
+        margin:auto;
+        width: 490px;
+        margin-left: 6%;
+        font-size: 10px;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1.8;
+        font-weight: 400;
+        padding: 30px;
+    }
+}
 
 
 
@@ -241,3 +319,5 @@ div.polaroid1 {
  .cf {
 	 *zoom: 1;
  }
+
+ 
