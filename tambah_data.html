@@ -1,0 +1,148 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="tambah_data.css">
+  <title>Tambah Data</title>
+</head>
+
+<body>
+  <header>
+    <div class="header" id="logo">
+      <p class="judul-header">Bimbelku.id</p>
+    </div>
+  </header>
+
+  <div id="mySidebar" class="sidebar">
+    <hr>
+    <p class="admin">Dashboard</p>
+    <hr>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">Artikel</a>
+  </div>
+
+  <div class="mainn" id="main">
+    <button class="openbtn" onclick="openNav()" style="border-radius: 6px;">☰</button>
+    <!-- <h2>Collapsed Sidebar</h2>
+        <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p> -->
+  </div>
+  <div class="kotak-table" id="kotak-table1">
+    <form>
+      <table id="customers">
+        <tr>
+          <td>ID</td>
+          <td><input type="text" placeholder="id..."></td>
+        </tr>
+        <tr>
+          <td>Judul Artikel</td>
+          <td><input type="text" placeholder="Judul Artikel..."></td>
+        </tr>
+        <tr>
+          <td>Jenis Artikel</td>
+          <td><input type="text" placeholder="Jenis Artikel..."></td>
+        </tr>
+        <tr>
+          <td>Penulis</td>
+          <td><input type="text" placeholder="Penulis..."></td>
+        </tr>
+        <tr>
+
+          <td>Upload File</td>
+          <td>
+            <div class="form file--upload">
+              <input type="file" id="File">
+            </div>
+          </td>
+        </tr>
+      </table>
+      <!-- <button class="tambah" onclick="window.location.href='login.html'">Tambah Data</button> -->
+      <input class="tambah" type="button" value="Tambah Data" onclick="window.location.href='admin.html'">
+    </form>
+  </div>
+
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
+  <script type="text/javascript">
+    $.fn.uploadGambar = function () {
+      this.append(`
+      <div class="grid-row image--detail-all">
+      <div class="grid-item-6">
+      <img class="image--preview" src="Resources/img/beach-calm-clouds-457882.jpg" alt="">
+      </div>
+      <div class="grid-item-6">
+      <ul class="ul__list">
+      <li>Nama foto : <span class="image--name"></span></li>
+      <li>Size : <span class="image--size"></span></li>
+      <li>type : <span class="image--type"></span></li>
+      </ul>
+      </div>
+      </div>
+      `);
+    }
+
+    $('.file--upload input').change(function () {
+      $('.image--detail-all').remove();
+
+      $('.file--upload').uploadGambar();
+      readURL(this);
+    });
+    
+    
+    function readURL(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        $('.image--type').html(input.files[0].type);
+        $('.image--name').html(input.files[0].name);
+        $('.image--size').html(input.files[0].size);
+        if (input.files[0].type == "application/pdf") {
+          reader.onload = function (e) {
+            $('.image--preview').attr('src', 'images/pdf.png');
+          }
+        } else if (input.files[0].type == "application/msword") {
+          reader.onload = function (e) {
+            $('.image--preview').attr('src', 'images/doc.png');
+          }
+        } else if (input.files[0].type == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
+          reader.onload = function (e) {
+            $('.image--preview').attr('src', 'images/xls.png');
+          }
+        } else if (input.files[0].type == "application/vnd.openxmlformats-officedocument.presentationml.presentation") {
+          reader.onload = function (e) {
+            $('.image--preview').attr('src', 'images/ppt.png');
+          }
+        }
+        reader.readAsDataURL(input.files[0]);
+      }
+
+    }
+
+  </script>
+
+</body>
+
+<!-- script -->
+<script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "170px";
+    document.getElementById("main").style.marginLeft = "170px";
+    document.getElementById("logo").style.marginLeft = "125px";
+    document.getElementById("kotak-table1").style.marginLeft = "290px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "60px";
+    document.getElementById("logo").style.marginLeft = "0";
+    document.getElementById("kotak-table1").style.marginLeft = "280";
+  }
+</script>
+
+
+
+
+</html>
